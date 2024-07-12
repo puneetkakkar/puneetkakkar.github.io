@@ -16,7 +16,11 @@ import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar
+      maxWidth="lg"
+      position="sticky"
+      className="bg-gray-200 dark:bg-[#07090e]"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink

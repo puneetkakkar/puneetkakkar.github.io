@@ -13,6 +13,16 @@ module.exports = {
         rubik: ["Rubik", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
+        // border: "background ease infinite",
+      },
+      keyframes: {
+        background: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+      },
     },
   },
   darkMode: "class",
