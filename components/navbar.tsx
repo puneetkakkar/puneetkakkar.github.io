@@ -45,7 +45,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium font-inter text-sm m-2"
+                  "data-[active=true]:text-primary data-[active=true]:font-medium font-rubik text-sm m-2"
                 )}
                 color="foreground"
                 href={item.href}

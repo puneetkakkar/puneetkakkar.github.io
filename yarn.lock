@@ -288,7 +288,7 @@
     "@nextui-org/shared-utils" "2.0.5"
     "@nextui-org/system-rsc" "2.1.2"
 
-"@nextui-org/divider@2.0.28":
+"@nextui-org/divider@2.0.28", "@nextui-org/divider@^2.0.28":
   version "2.0.28"
   resolved "https://registry.yarnpkg.com/@nextui-org/divider/-/divider-2.0.28.tgz#e574b5d212b0e81f78d8f9a54783ce9927b65582"
   integrity sha512-IskKmDOO8qwmTO2WtDmrH8fZvnV2JebP3PFfwqpToAdDRbRUs78pls2e8/T9clbLLtNxjfCFAI/Yi9C+LPPEXw==

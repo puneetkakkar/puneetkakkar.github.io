@@ -22,12 +22,11 @@ export default function Home() {
               internet.
             </span>
           </div>
-          <div>
-            <span className="font-inter text-xs">
+          <div className="py-[11px]">
+            <span className="font-rubik sm:text-xs lg:text-medium">
               I'm a software engineer specializing in building exceptional
               digital experiences. I'm a software engineer specializing in
-              building exceptional digital experiences. I'm a software engineer
-              specializing in building exceptional digital experiences.
+              building exceptional digital experiences.
             </span>
           </div>
           <Button
@@ -53,22 +52,22 @@ export default function Home() {
                     className="fill-black dark:fill-white "
                     size={18}
                   />
-                  <span className="px-1 font-inter text-sm">Python</span>
+                  <span className="px-1 font-rubik text-sm">Python</span>
                 </div>
                 <div className="flex items-center">
                   <JavaIcon className="fill-black dark:fill-white " size={18} />
-                  <span className="px-1 font-inter text-sm">Java</span>
+                  <span className="px-1 font-rubik text-sm">Java</span>
                 </div>
                 <div className="flex items-center">
                   <TSIcon className="fill-black dark:fill-white " size={18} />
-                  <span className="px-1 font-inter text-sm">TypeScript</span>
+                  <span className="px-1 font-rubik text-sm">TypeScript</span>
                 </div>
                 <div className="flex items-center">
                   <NoSQLDBIcon
                     className="fill-black dark:fill-white "
                     size={18}
                   />
-                  <span className="px-1 font-inter text-sm">NoSQL</span>
+                  <span className="px-1 font-rubik text-sm">NoSQL</span>
                 </div>
               </div>
             </div>
@@ -81,7 +80,7 @@ export default function Home() {
               <span className="font-rubik text-medium font-extrabold mt-3">
                 Based in
               </span>
-              <span className="font-inter text-xs my-1">Buffalo, New York</span>
+              <span className="font-rubik text-xs my-1">Buffalo, New York</span>
             </div>
           </div>
         </div>
@@ -98,28 +97,28 @@ export default function Home() {
                   className="fill-black dark:fill-white "
                   size={24}
                 />
-                <span className="font-inter text-xs">Dealshare</span>
+                <span className="font-rubik text-xs">Dealshare</span>
               </div>
               <div className="flex flex-col items-center mx-5 mb-2 mt-2">
                 <CompanyLogo
                   className="fill-black dark:fill-white "
                   size={24}
                 />
-                <span className="font-inter text-xs">Chqbook</span>
+                <span className="font-rubik text-xs">Chqbook</span>
               </div>
               <div className="flex flex-col items-center mx-5 mb-2 mt-2">
                 <CompanyLogo
                   className="fill-black dark:fill-white "
                   size={24}
                 />
-                <span className="font-inter text-xs">Bijnis</span>
+                <span className="font-rubik text-xs">Bijnis</span>
               </div>
               <div className="flex flex-col items-center mx-5 mb-2 mt-2">
                 <CompanyLogo
                   className="fill-black dark:fill-white "
                   size={24}
                 />
-                <span className="font-inter text-xs">DailyObjects</span>
+                <span className="font-rubik text-xs">DailyObjects</span>
               </div>
             </div>
           </div>
