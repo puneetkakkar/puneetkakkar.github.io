@@ -53,7 +53,7 @@ export default function RootLayout({
             children: children,
           }}
         >
-          <div className="relative flex flex-col h-screen bg-gray-200 dark:bg-[#07090e]">
+          <div className="relative flex flex-col bg-[#eef0f4] dark:bg-[#07090e]">
             <Navbar />
             <main className="container mx-auto max-w-6xl pt-16 px-6 flex-grow">
               {children}
@@ -110,15 +110,6 @@ export default function RootLayout({
                   />
                 </div>
               </div>
-              {/* <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">&copy;</span>
-                <p className="text-primary">Puneet Kakkar</p>
-              </Link> */}
             </footer>
           </div>
         </Providers>

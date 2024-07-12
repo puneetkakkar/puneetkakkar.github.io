@@ -17,14 +17,15 @@ import { siteConfig } from "@/config/site";
 export const Navbar = () => {
   return (
     <NextUINavbar
-      maxWidth="lg"
+      maxWidth="full"
       position="sticky"
-      className="bg-gray-200 dark:bg-[#07090e]"
+      className="bg-[#eef0f4] dark:bg-[#07090e] sm:max-w-screen-md lg:max-w-screen-lg m-auto"
+      classNames={{ wrapper: "sm:px-1 lg:px-6" }}
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink
-            className="flex justify-start items-center gap-1 font-rubik text-large font-extrabold bg-[linear-gradient(105.36deg,_#0052F4_0%,_#0052F4_76.61%,_#0054F5_150.11%)] text-transparent bg-clip-text"
+            className="flex justify-start items-center gap-1 font-rubik text-xl font-extrabold bg-[linear-gradient(105.36deg,_#0052F4_0%,_#0052F4_76.61%,_#0054F5_150.11%)] text-transparent bg-clip-text"
             href="/"
           >
             Puneet Kakkar
@@ -55,31 +56,6 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </ul>
-        {/* {showAuthButtons ? (
-          <>
-            <NavbarItem className="hidden md:flex">
-              <Button
-                as={NextLink}
-                href="/login"
-                color="primary"
-                variant="flat"
-                className="font-normal font-rubik"
-              >
-                Login
-              </Button>
-            </NavbarItem>
-            <NavbarItem className="hidden md:flex">
-              <Button
-                as={NextLink}
-                href="/signup"
-                className="font-rubik font-normal text-primary-foreground bg-primary"
-                variant="flat"
-              >
-                Sign up
-              </Button>
-            </NavbarItem>
-          </>
-        ) : null} */}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
