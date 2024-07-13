@@ -2,9 +2,9 @@ import { Button } from '@nextui-org/button'
 import Image from 'next/image'
 import NextLink from 'next/link'
 
-import UpvoiceThumbnail from '@/assets/upvoice-thumbnail.svg'
 import BitnetThumbnail from '@/assets/bitnet-thumbnail.svg'
-import ForecastingThumbnail from '@/assets/forecasting-thumbnail.png'
+import ForecastingThumbnail from '@/assets/forecasting-thumbnail.svg'
+import UpvoiceThumbnail from '@/assets/upvoice-thumbnail.svg'
 import {
   CompanyLogo,
   JavaIcon,
