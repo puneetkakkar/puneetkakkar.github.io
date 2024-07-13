@@ -1,7 +1,6 @@
 language: node_js
-dist: xenial
 node_js:
-  - 20
+  - 12
 cache:
   directories:
     - node_modules
