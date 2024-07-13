@@ -36,7 +36,7 @@ export default function Home() {
             </div>
             <Button
               as={NextLink}
-              href="/"
+              href="#projects"
               color="primary"
               className="font-normal font-rubik rounded-md mt-5 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]"
             >
@@ -45,7 +45,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex sm:flex-col w-full sm:gap-4 sm:justify-start">
+        <div
+          className="flex sm:flex-col w-full sm:gap-4 sm:justify-start"
+          id="projects"
+        >
           <div className="flex sm:flex-row w-full sm:gap-4">
             <div className="group w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer">
               <div className="animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible"></div>
@@ -159,7 +162,7 @@ export default function Home() {
               </div>
               <Button
                 as={NextLink}
-                href="/"
+                href="https://devpost.com/software/upvoice"
                 color="primary"
                 className="font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]"
               >
@@ -193,7 +196,7 @@ export default function Home() {
               </div>
               <Button
                 as={NextLink}
-                href="/"
+                href="https://github.com/puneetkakkar/Bitnet-1.58B"
                 color="primary"
                 className="font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]"
               >
@@ -223,7 +226,7 @@ export default function Home() {
               </div>
               <Button
                 as={NextLink}
-                href="/"
+                href="https://github.com/puneetkakkar/forecasting-mental-wellbeing"
                 color="primary"
                 className="font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]"
               >

@@ -25,7 +25,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink
-            className="flex justify-start items-center gap-1 font-rubik text-xl font-extrabold bg-[linear-gradient(105.36deg,_#0052F4_0%,_#0052F4_76.61%,_#0054F5_150.11%)] text-transparent bg-clip-text"
+            className="flex justify-start items-center gap-1 font-rubik text-xl font-extrabold text-transparent dark:bg-white bg-blue-700 bg-clip-text"
             href="/"
           >
             Puneet Kakkar
@@ -70,6 +70,7 @@ export const Navbar = () => {
               <NextLink
                 color={index === 0 ? "primary" : "foreground"}
                 href={item.href}
+                target={item.target}
               >
                 {item.label}
               </NextLink>

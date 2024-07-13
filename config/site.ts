@@ -1,20 +1,23 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Puneet Kakkar | Portfolio",
+  description: "Portfolio",
   navItems: [
     {
       label: "Discover",
-      href: "/discover",
+      href: "#projects",
+      target: "_self",
     },
     {
       label: "Contact",
-      href: "/contact",
+      href: "#contact",
+      target: "_self",
     },
     {
       label: "Resume",
-      href: "/resume",
+      href: "https://drive.google.com/file/d/1SRIZcn0_8Hw-ahBzalZnvxiqETuWl8H2/view?usp=sharing",
+      target: "_blank",
     },
   ],
   navMenuItems: [
