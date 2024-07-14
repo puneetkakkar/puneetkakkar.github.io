@@ -16,9 +16,9 @@ import {
 
 export default function Home() {
   return (
-    <section className='sm:flex sm:flex-col sm:mx-16'>
-      <div className='sm:flex sm:flex-row sm:gap-4 py-8 md:py-10'>
-        <div className='group w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
+    <section className='sm:flex sm:flex-col '>
+      <div className='flex flex-col lg:flex-row sm:gap-4 sm:py-8 md:py-10'>
+        <div className='group w-full sm:w-full mb-4 md:mb-0 relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
           <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
           <div className='relative rounded-[15px] sm:text-left w-full bg-[#F9F9F9] dark:bg-[#171D27] p-5'>
             <div className='font-rubik font-extrabold text-4xl'>
@@ -28,16 +28,16 @@ export default function Home() {
                 internet.
               </span>
             </div>
-            <div className='py-[11px]'>
-              <span className='font-rubik sm:text-xs lg:text-medium'>
-                I&apos;m a CS Master&apos;s student at the University at
-                Buffalo. I hold 5+ YOE as a software engineer specializing in
-                building high-performance, and highly scalable applications.
+            <div className='py-[11px] pr-2 md:min-h-[90px] md:max-h-[100px]'>
+              <span className='font-inter sm:text-xs md:text-sm'>
+                I'm a CS Master's student at the University at Buffalo. I hold
+                5+ YOE as a software engineer specializing in building
+                high-performance, and highly scalable applications.
               </span>
             </div>
             <Button
               as={NextLink}
-              className='font-normal font-rubik rounded-md mt-5 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+              className='font-normal font-inter rounded-md mt-5 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
               color='primary'
               href='#projects'
             >
@@ -46,11 +46,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          className='flex sm:flex-col w-full sm:gap-4 sm:justify-start'
-          id='projects'
-        >
-          <div className='flex sm:flex-row w-full sm:gap-4'>
+        <div className='flex flex-col w-full sm:w-full gap-4'>
+          <div className='flex sm:flex-row w-full gap-4'>
             <div className='group w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
               <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
               <div className='relative rounded-[15px] bg-[#FFFFFF]  dark:bg-[#171D27] w-full p-4'>
@@ -108,28 +105,28 @@ export default function Home() {
                 Work Experience
               </div>
               <div className='flex justify-center items-center py-7'>
-                <div className='flex flex-col items-center mx-5 mb-2 mt-2'>
+                <div className='flex flex-col items-center mx-3 sm:mx-5 mb-2 mt-2'>
                   <CompanyLogo
-                    className='fill-black dark:fill-white '
+                    className='fill-black dark:fill-white'
                     size={24}
                   />
                   <span className='font-rubik text-xs'>Dealshare</span>
                 </div>
-                <div className='flex flex-col items-center mx-5 mb-2 mt-2'>
+                <div className='flex flex-col items-center mx-3 sm:mx-5 mb-2 mt-2'>
                   <CompanyLogo
                     className='fill-black dark:fill-white '
                     size={24}
                   />
                   <span className='font-rubik text-xs'>Chqbook</span>
                 </div>
-                <div className='flex flex-col items-center mx-5 mb-2 mt-2'>
+                <div className='flex flex-col items-center mx-3 sm:mx-5 mb-2 mt-2'>
                   <CompanyLogo
                     className='fill-black dark:fill-white '
                     size={24}
                   />
                   <span className='font-rubik text-xs'>Bijnis</span>
                 </div>
-                <div className='flex flex-col items-center mx-5 mb-2 mt-2'>
+                <div className='flex flex-col items-center mx-3 sm:mx-5 mb-2 mt-2'>
                   <CompanyLogo
                     className='fill-black dark:fill-white '
                     size={24}
@@ -141,7 +138,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center py-48'>
+      <div
+        id='projects'
+        className='flex flex-col items-center justify-center py-48'
+      >
         <div className='font-rubik text-xs text-[#818181]'>Curated Work</div>
         <div className='font-rubik text-lg font-extrabold'>
           Things I&apos;ve built from the ground

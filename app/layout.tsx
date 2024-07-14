@@ -54,16 +54,16 @@ export default function RootLayout({
         >
           <div className='relative flex flex-col bg-[#eef0f4] dark:bg-[#07090e]'>
             <Navbar />
-            <main className='container mx-auto max-w-6xl pt-16 px-6 flex-grow'>
+            <main className='w-full px-6 sm:px-20 lg:px-38 xl:px-56 pt-16 flex-grow'>
               {children}
             </main>
             <footer className='w-full flex flex-col py-3 dark:bg-[#171D27] bg-[#171D27]'>
-              <div className='flex flex-col container mx-auto max-w-5xl px-6 flex-grow'>
+              <div className='flex flex-col px-6 sm:px-20 lg:px-38 xl:px-56 flex-grow'>
                 <div
-                  className='flex items-center justify-between w-full mt-14 mb-10 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] py-6 px-8 rounded-xl'
+                  className='flex flex-col sm:flex-row md:items-center justify-between w-full mt-14 mb-10 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] py-6 px-8 rounded-xl'
                   id='contact'
                 >
-                  <div className='sm:w-8/12 lg:w-6/12 mr-10'>
+                  <div className='mb-5 sm:w-8/12 lg:w-6/12 lg:mr-10'>
                     <div className='font-rubik font-extrabold sm:text-lg mb-2 text-white'>
                       Let&apos;s Connect and Create Something Amazing!
                     </div>
@@ -72,7 +72,7 @@ export default function RootLayout({
                       to me for collaborations, inquiries, or just to say hello
                     </div>
                   </div>
-                  <div className='flex items-center justify-center'>
+                  <div className='flex items-center justify-start sm:justify-center'>
                     <Button
                       as={NextLink}
                       className='font-normal font-rubik rounded-md px-10 bg-gray-200 text-[#363636]'
@@ -85,8 +85,8 @@ export default function RootLayout({
                   </div>
                 </div>
                 <Divider className='dark: bg-gray-700' />
-                <div className='flex flex-row w-full mt-8 mb-5'>
-                  <div className='text-xs font-rubik text-[#818181] w-5/12'>
+                <div className='flex flex-row items-center w-full gap-4 sm:gap-2 mt-8 mb-5'>
+                  <div className='text-xs font-rubik text-[#818181] w-3/12 sm:w-3/12'>
                     Created by{' '}
                     <a className='dark:text-white text-gray-300' href='/'>
                       @puneetkakkar
@@ -100,10 +100,10 @@ export default function RootLayout({
                       @abgautam
                     </a>
                   </div>
-                  <div className='text-xs font-rubik text-[#818181] w-6/12'>
+                  <div className='text-xs font-rubik text-[#818181] text-center w-6/12 sm:w-6/12'>
                     &copy; 2024 Puneet Kakkar. All Rights Reserved.
                   </div>
-                  <div className='flex flex-row items-center'>
+                  <div className='flex flex-row items-center justify-end w-3/12 sm:w-3/12'>
                     <DiscordIcon
                       className='mx-1 text-gray-300 cursor-pointer'
                       href='https://discord.com/users/717601845119549490'

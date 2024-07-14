@@ -17,8 +17,9 @@ import { siteConfig } from '@/config/site'
 export const Navbar = () => {
   return (
     <NextUINavbar
-      className='bg-[#eef0f4] dark:bg-[#07090e] sm:max-w-screen-md lg:max-w-screen-lg m-auto'
-      classNames={{ wrapper: 'sm:px-1 lg:px-6' }}
+      className='bg-[#eef0f4] dark:bg-[#07090e] sm:px-20 lg:px-38 xl:px-56'
+      // classNames={{ wrapper: 'max-w-screen-sm md:px-0 md:max-w-screen-md lg:max-w-screen-lg' }}
+      classNames={{ wrapper: 'md:px-0' }}
       maxWidth='full'
       position='sticky'
     >
@@ -37,9 +38,6 @@ export const Navbar = () => {
         className='hidden sm:flex basis-1/5 sm:basis-full'
         justify='end'
       >
-        <NavbarItem className='hidden sm:flex gap-2'>
-          <ThemeSwitch />
-        </NavbarItem>
         <ul className='hidden sm:flex gap-4 justify-start ml-2'>
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
@@ -56,6 +54,9 @@ export const Navbar = () => {
             </NavbarItem>
           ))}
         </ul>
+        <NavbarItem className='hidden sm:flex gap-2'>
+          <ThemeSwitch />
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
