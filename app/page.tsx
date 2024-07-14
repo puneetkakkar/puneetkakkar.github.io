@@ -30,9 +30,9 @@ export default function Home() {
             </div>
             <div className='py-[11px] pr-2 md:min-h-[90px] md:max-h-[100px]'>
               <span className='font-inter sm:text-xs md:text-sm'>
-                I'm a CS Master's student at the University at Buffalo. I hold
-                5+ YOE as a software engineer specializing in building
-                high-performance, and highly scalable applications.
+                I&apos;m a CS Master&apos;s student at the University at
+                Buffalo. I hold 5+ YOE as a software engineer specializing in
+                building high-performance, and highly scalable applications.
               </span>
             </div>
             <Button
@@ -139,8 +139,8 @@ export default function Home() {
         </div>
       </div>
       <div
-        id='projects'
         className='flex flex-col items-center justify-center py-48'
+        id='projects'
       >
         <div className='font-rubik text-xs text-[#818181]'>Curated Work</div>
         <div className='font-rubik text-lg font-extrabold'>
@@ -237,9 +237,9 @@ export default function Home() {
             <div className='flex w-full justify-center'>
               <Image
                 alt='Human Hug'
+                height={350}
                 src={ForecastingThumbnail}
                 width={350}
-                height={350}
               />
             </div>
           </div>
