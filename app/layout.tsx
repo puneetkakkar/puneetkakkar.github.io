@@ -54,11 +54,11 @@ export default function RootLayout({
         >
           <div className='relative flex flex-col bg-[#eef0f4] dark:bg-[#07090e]'>
             <Navbar />
-            <main className='w-full px-6 sm:px-20 lg:px-38 xl:px-56 pt-16 flex-grow'>
+            <main className='w-full px-6 sm:px-20 lg:px-38 xl:px-56 2xl:px-96 pt-16 flex-grow'>
               {children}
             </main>
             <footer className='w-full flex flex-col py-3 dark:bg-[#171D27] bg-[#171D27]'>
-              <div className='flex flex-col px-6 sm:px-20 lg:px-38 xl:px-56 flex-grow'>
+              <div className='flex flex-col px-6 sm:px-20 lg:px-38 xl:px-56 2xl:px-96 flex-grow'>
                 <div
                   className='flex flex-col sm:flex-row md:items-center justify-between w-full mt-14 mb-10 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] py-6 px-8 rounded-xl'
                   id='contact'
@@ -134,5 +134,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-// sm:px-16 md:px-24 lg:px-56
