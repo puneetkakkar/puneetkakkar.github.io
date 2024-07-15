@@ -17,7 +17,7 @@ import { siteConfig } from '@/config/site'
 export const Navbar = () => {
   return (
     <NextUINavbar
-      className='bg-[#eef0f4] dark:bg-[#07090e] sm:px-20 lg:px-38 xl:px-56 bg-opacity-40 dark:bg-opacity-40'
+      className='bg-[#eef0f4] dark:bg-[#07090e] sm:px-20 lg:px-38 xl:px-56 2xl:px-96 bg-opacity-40 dark:bg-opacity-40'
       classNames={{ wrapper: 'md:px-0' }}
       maxWidth='full'
       position='sticky'
