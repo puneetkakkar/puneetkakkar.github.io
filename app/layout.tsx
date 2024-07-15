@@ -1,8 +1,8 @@
 import '@/styles/globals.css'
-import clsx from 'clsx'
-import { Metadata, Viewport } from 'next'
 import { Button } from '@nextui-org/button'
 import { Divider } from '@nextui-org/divider'
+import clsx from 'clsx'
+import { Metadata, Viewport } from 'next'
 import NextLink from 'next/link'
 
 import { Providers } from './providers'
@@ -10,11 +10,12 @@ import { Providers } from './providers'
 import {
   DiscordIcon,
   GithubIcon,
-  InstagramIcon,
-  LinkedInIcon
+  LinkedInIcon,
+  RedditIcon
 } from '@/components/icons'
 import { Navbar } from '@/components/navbar'
 import { siteConfig } from '@/config/site'
+import { Link } from '@nextui-org/link'
 
 export const metadata: Metadata = {
   title: {
@@ -104,26 +105,53 @@ export default function RootLayout({
                     &copy; 2024 Puneet Kakkar. All Rights Reserved.
                   </div>
                   <div className='flex flex-row items-center justify-end w-3/12 sm:w-3/12'>
-                    <DiscordIcon
-                      className='mx-1 text-gray-300 cursor-pointer'
+                    <Link
+                      isExternal
+                      showAnchorIcon
                       href='https://discord.com/users/717601845119549490'
-                      size={18}
-                    />
-                    <GithubIcon
-                      className='mx-1 text-gray-300 cursor-pointer'
+                      anchorIcon={
+                        <DiscordIcon
+                          className='mx-1 text-gray-300 cursor-pointer'
+                          size={18}
+                        />
+                      }
+                    ></Link>
+
+                    <Link
+                      isExternal
+                      showAnchorIcon
                       href='https://github.com/puneetkakkar'
-                      size={18}
-                    />
-                    <LinkedInIcon
-                      className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
+                      anchorIcon={
+                        <GithubIcon
+                          className='mx-1 text-gray-300 cursor-pointer'
+                          size={18}
+                        />
+                      }
+                    ></Link>
+
+                    <Link
+                      isExternal
+                      showAnchorIcon
                       href='https://www.linkedin.com/in/puneet-kakkar/'
-                      size={18}
-                    />
-                    <InstagramIcon
-                      className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
-                      href='https://www.instagram.com/puneet_kakkar/'
-                      size={16}
-                    />
+                      anchorIcon={
+                        <LinkedInIcon
+                          className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
+                          size={18}
+                        />
+                      }
+                    ></Link>
+
+                    <Link
+                      isExternal
+                      showAnchorIcon
+                      href='https://www.reddit.com/user/Binary_Explorer/'
+                      anchorIcon={
+                        <RedditIcon
+                          className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
+                          size={16}
+                        />
+                      }
+                    ></Link>
                   </div>
                 </div>
               </div>
