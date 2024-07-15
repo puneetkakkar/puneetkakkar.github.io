@@ -65,10 +65,10 @@ export default function RootLayout({
                   id='contact'
                 >
                   <div className='mb-5 sm:w-8/12 lg:w-6/12 lg:mr-10'>
-                    <div className='font-rubik font-extrabold sm:text-lg mb-2 text-white'>
+                    <div className='font-rubik font-extrabold text-medium sm:text-lg mb-2 text-white'>
                       Let&apos;s Connect and Create Something Amazing!
                     </div>
-                    <div className='font-inter text-xs text-white'>
+                    <div className='font-inter text-[12px] sm:text-xs text-white'>
                       Interested in my work and wanna work together? Reach out
                       to me for collaborations, inquiries, or just to say hello
                     </div>
@@ -76,7 +76,7 @@ export default function RootLayout({
                   <div className='flex items-center justify-start sm:justify-center'>
                     <Button
                       as={NextLink}
-                      className='font-normal font-inter rounded-md px-10 bg-gray-200 text-[#363636]'
+                      className='font-normal font-inter text-xs sm:text-sm rounded-md px-10 bg-gray-200 text-[#363636]'
                       color='primary'
                       href='/'
                       variant='flat'
