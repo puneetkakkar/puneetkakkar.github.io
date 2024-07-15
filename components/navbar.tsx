@@ -17,8 +17,7 @@ import { siteConfig } from '@/config/site'
 export const Navbar = () => {
   return (
     <NextUINavbar
-      className='bg-[#eef0f4] dark:bg-[#07090e] sm:px-20 lg:px-38 xl:px-56'
-      // classNames={{ wrapper: 'max-w-screen-sm md:px-0 md:max-w-screen-md lg:max-w-screen-lg' }}
+      className='bg-[#eef0f4] dark:bg-[#07090e] sm:px-20 lg:px-38 xl:px-56 bg-opacity-40 dark:bg-opacity-40'
       classNames={{ wrapper: 'md:px-0' }}
       maxWidth='full'
       position='sticky'
@@ -64,7 +63,7 @@ export const Navbar = () => {
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className='bg-[#eef0f4] dark:bg-[#07090e] bg-opacity-40 dark:bg-opacity-40'>
         <div className='mx-4 mt-2 flex flex-col gap-2'>
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>

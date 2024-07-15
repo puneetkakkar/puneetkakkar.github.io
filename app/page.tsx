@@ -20,7 +20,7 @@ export default function Home() {
       <div className='flex flex-col lg:flex-row sm:gap-4 sm:py-8 md:py-10'>
         <div className='group w-full sm:w-full mb-4 md:mb-0 relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
           <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
-          <div className='relative rounded-[15px] sm:text-left w-full bg-[#F9F9F9] dark:bg-[#171D27] p-5'>
+          <div className='flex flex-col relative h-full rounded-[15px] sm:text-left w-full bg-[#F9F9F9] dark:bg-[#171D27] p-7'>
             <div className='font-rubik font-extrabold text-4xl'>
               <span>
                 I build things <br />
@@ -28,16 +28,17 @@ export default function Home() {
                 internet.
               </span>
             </div>
-            <div className='py-[11px] pr-2 md:min-h-[90px] md:max-h-[100px]'>
+            <div className='py-[11px] pr-2 md:min-h-[90px] md:max-h-[110px]'>
               <span className='font-inter sm:text-xs md:text-sm'>
                 I&apos;m a CS Master&apos;s student at the University at
-                Buffalo. I hold 5+ YOE as a software engineer specializing in
-                building high-performance, and highly scalable applications.
+                Buffalo. I hold 5+ years of experience as a software engineer
+                specializing in building high-performance, and highly scalable
+                applications.
               </span>
             </div>
             <Button
               as={NextLink}
-              className='font-normal font-inter rounded-md mt-5 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+              className='font-normal font-inter rounded-md mt-5 w-1/2 sm::w-1/3 md:w-4/12 lg:w-5/12 xl:w-4/12 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
               color='primary'
               href='#projects'
             >
@@ -55,30 +56,30 @@ export default function Home() {
                   Technologies
                 </span>
                 <div className='flex flex-col'>
-                  <div className='flex items-center'>
+                  <div className='flex items-center py-1'>
                     <PythonIcon
                       className='fill-black dark:fill-white '
                       size={18}
                     />
-                    <span className='px-1 font-rubik text-sm'>Python</span>
+                    <span className='px-1 font-inter text-sm'>Python</span>
                   </div>
-                  <div className='flex items-center'>
+                  <div className='flex items-center py-1'>
                     <JavaIcon
                       className='fill-black dark:fill-white '
                       size={18}
                     />
-                    <span className='px-1 font-rubik text-sm'>Java</span>
+                    <span className='px-1 font-inter text-sm'>Java</span>
                   </div>
-                  <div className='flex items-center'>
+                  <div className='flex items-center py-1'>
                     <TSIcon className='fill-black dark:fill-white ' size={18} />
-                    <span className='px-1 font-rubik text-sm'>TypeScript</span>
+                    <span className='px-1 font-inter text-sm'>TypeScript</span>
                   </div>
-                  <div className='flex items-center'>
+                  <div className='flex items-center py-1'>
                     <NoSQLDBIcon
                       className='fill-black dark:fill-white '
                       size={18}
                     />
-                    <span className='px-1 font-rubik text-sm'>NoSQL</span>
+                    <span className='px-1 font-inter text-sm'>NoSQL</span>
                   </div>
                 </div>
               </div>
@@ -91,7 +92,7 @@ export default function Home() {
                 <span className='font-rubik text-medium font-extrabold mt-3'>
                   Based in
                 </span>
-                <span className='font-rubik text-xs my-1'>
+                <span className='font-inter text-xs my-1'>
                   Buffalo, New York
                 </span>
               </div>
@@ -142,7 +143,9 @@ export default function Home() {
         className='flex flex-col items-center justify-center py-48'
         id='projects'
       >
-        <div className='font-rubik text-xs text-[#818181]'>Curated Work</div>
+        <div className='font-rubik text-xs text-[#818181] mb-4'>
+          Curated Work
+        </div>
         <div className='font-rubik text-lg font-extrabold'>
           Things I&apos;ve built from the ground
         </div>
@@ -150,20 +153,20 @@ export default function Home() {
           <div className='font-rubik uppercase text-sm font-normal pt-20 pb-2'>
             UpVoice, 2024
           </div>
-          <div className='flex flex-row items-center justify-center pl-16 w-full'>
-            <div className='flex flex-col sm:w-10/12 lg:w-8/12'>
+          <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
+            <div className='flex flex-col sm:w-full lg:w-10/12'>
               <div className='font-rubik font-extrabold text-lg mb-5'>
                 Join UpVoice: Voice concerns for transparency and
                 accountability.
               </div>
-              <div className='font-rubik text-sm text-[#818181]'>
+              <div className='font-inter text-sm text-[#818181]'>
                 A web-app that provides a platform for citizens to voice
                 concerns directly to company stakeholders, fostering
                 transparency and accountability.
               </div>
               <Button
                 as={NextLink}
-                className='font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+                className='font-normal font-inter rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                 color='primary'
                 href='https://devpost.com/software/upvoice'
               >
@@ -184,20 +187,20 @@ export default function Home() {
           <div className='font-rubik uppercase text-sm font-normal pt-20 pb-10'>
             Bitnet 1.58B, 2024
           </div>
-          <div className='flex flex-row items-center justify-center pl-16 w-full'>
-            <div className='flex flex-col sm:w-10/12 lg:w-8/12'>
+          <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
+            <div className='flex flex-col sm:w-full lg:w-10/12'>
               <div className='font-rubik font-extrabold text-lg mb-5'>
                 Bitnet 1.58b: 1-bit LLM for efficient training and
                 collaboration.
               </div>
-              <div className='font-rubik text-sm text-[#818181]'>
+              <div className='font-inter text-sm text-[#818181]'>
                 Bitnet 1.58b: This project implements the innovative 1-bit LLM
                 architecture described in recent whitepapers, focusing on
                 efficient training, inference, and open-source collaboration.
               </div>
               <Button
                 as={NextLink}
-                className='font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+                className='font-normal font-inter rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                 color='primary'
                 href='https://github.com/puneetkakkar/Bitnet-1.58B'
               >
@@ -213,13 +216,13 @@ export default function Home() {
           <div className='font-rubik uppercase text-sm font-normal pt-20 pb-10'>
             Forecasting Mental WellBeing, 2024
           </div>
-          <div className='flex flex-row items-center justify-center pl-16 w-full'>
-            <div className='flex flex-col sm:w-10/12 lg:w-8/12'>
+          <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
+            <div className='flex flex-col sm:w-full lg:w-10/12'>
               <div className='font-rubik font-extrabold text-lg mb-5'>
                 Estimating countries suicide rates for precision interventions,
                 prioritizing mental wellbeing.
               </div>
-              <div className='font-rubik text-sm text-[#818181]'>
+              <div className='font-inter text-sm text-[#818181]'>
                 Our project&apos;s AI-driven regressor forecasts county suicide
                 rates, integrating mental health data to empower targeted
                 interventions by public health and policymakers, bolstering
@@ -227,7 +230,7 @@ export default function Home() {
               </div>
               <Button
                 as={NextLink}
-                className='font-normal font-rubik rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+                className='font-normal font-inter rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                 color='primary'
                 href='https://github.com/puneetkakkar/forecasting-mental-wellbeing'
               >
@@ -237,9 +240,8 @@ export default function Home() {
             <div className='flex w-full justify-center'>
               <Image
                 alt='Human Hug'
-                height={350}
+                className='h-[250] w-[250] sm:h-[380] sm:w-[350]'
                 src={ForecastingThumbnail}
-                width={350}
               />
             </div>
           </div>

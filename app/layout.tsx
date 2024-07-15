@@ -67,7 +67,7 @@ export default function RootLayout({
                     <div className='font-rubik font-extrabold sm:text-lg mb-2 text-white'>
                       Let&apos;s Connect and Create Something Amazing!
                     </div>
-                    <div className='font-rubik text-xs text-white'>
+                    <div className='font-inter text-xs text-white'>
                       Interested in my work and wanna work together? Reach out
                       to me for collaborations, inquiries, or just to say hello
                     </div>
@@ -75,7 +75,7 @@ export default function RootLayout({
                   <div className='flex items-center justify-start sm:justify-center'>
                     <Button
                       as={NextLink}
-                      className='font-normal font-rubik rounded-md px-10 bg-gray-200 text-[#363636]'
+                      className='font-normal font-inter rounded-md px-10 bg-gray-200 text-[#363636]'
                       color='primary'
                       href='/'
                       variant='flat'
@@ -86,7 +86,7 @@ export default function RootLayout({
                 </div>
                 <Divider className='dark: bg-gray-700' />
                 <div className='flex flex-row items-center w-full gap-4 sm:gap-2 mt-8 mb-5'>
-                  <div className='text-xs font-rubik text-[#818181] w-3/12 sm:w-3/12'>
+                  <div className='text-xs font-inter text-[#818181] w-3/12 sm:w-3/12'>
                     Created by{' '}
                     <a className='dark:text-white text-gray-300' href='/'>
                       @puneetkakkar
@@ -100,7 +100,7 @@ export default function RootLayout({
                       @abgautam
                     </a>
                   </div>
-                  <div className='text-xs font-rubik text-[#818181] text-center w-6/12 sm:w-6/12'>
+                  <div className='text-xs font-inter text-[#818181] text-center w-6/12 sm:w-6/12'>
                     &copy; 2024 Puneet Kakkar. All Rights Reserved.
                   </div>
                   <div className='flex flex-row items-center justify-end w-3/12 sm:w-3/12'>
