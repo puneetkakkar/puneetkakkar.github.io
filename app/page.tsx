@@ -147,7 +147,7 @@ export default function Home() {
           </div>
 
           <div className='group flex w-full h-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
-            <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
+            <div className='animate-spin-slow invisible absolute -top-52 -bottom-52 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
             <div className='relative rounded-[15px] flex flex-col bg-[#FFFFFF] dark:bg-[#171D27] w-full p-4'>
               <div className='font-rubik font-extrabold text-lg'>
                 Work Experience
@@ -277,8 +277,9 @@ export default function Home() {
             <div className='flex w-full justify-center'>
               <Image
                 alt='Human Hug'
-                className='h-[250] w-[250] sm:h-[380] sm:w-[350]'
                 src={ForecastingThumbnail}
+                width={280}
+                height={280}
               />
             </div>
           </div>
