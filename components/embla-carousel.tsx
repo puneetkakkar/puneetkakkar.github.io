@@ -4,6 +4,7 @@ import { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { ReactNode, useCallback } from 'react'
+
 import { DotButton, useDotButton } from './embla-carousel-dot-button'
 
 type PropType = {
@@ -18,6 +19,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay
+
     if (!autoplay) return
 
     const resetOrStop =
@@ -35,7 +37,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <section className='embla flex flex-col-reverse m-0 w-full'>
-      <div className='embla__viewport h-full' ref={emblaRef}>
+      <div ref={emblaRef} className='embla__viewport h-full'>
         <div className='embla__container h-full'>{children}</div>
       </div>
 
@@ -44,10 +46,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
-              onClick={() => onDotButtonClick(index)}
               className={'embla__dot'.concat(
                 index === selectedIndex ? ' light__embla__dot--selected ' : ''
               )}
+              onClick={() => onDotButtonClick(index)}
             />
           ))}
         </div>
@@ -58,10 +60,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
-              onClick={() => onDotButtonClick(index)}
               className={'embla__dot'.concat(
                 index === selectedIndex ? ' dark__embla__dot--selected' : ''
               )}
+              onClick={() => onDotButtonClick(index)}
             />
           ))}
         </div>

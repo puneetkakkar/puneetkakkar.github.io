@@ -4,6 +4,7 @@ import { Divider } from '@nextui-org/divider'
 import clsx from 'clsx'
 import { Metadata, Viewport } from 'next'
 import NextLink from 'next/link'
+import { Link } from '@nextui-org/link'
 
 import { Providers } from './providers'
 
@@ -15,7 +16,6 @@ import {
 } from '@/components/icons'
 import { Navbar } from '@/components/navbar'
 import { siteConfig } from '@/config/site'
-import { Link } from '@nextui-org/link'
 
 export const metadata: Metadata = {
   title: {
@@ -108,50 +108,50 @@ export default function RootLayout({
                     <Link
                       isExternal
                       showAnchorIcon
-                      href='https://discord.com/users/717601845119549490'
                       anchorIcon={
                         <DiscordIcon
                           className='mx-1 text-gray-300 cursor-pointer'
                           size={18}
                         />
                       }
-                    ></Link>
+                      href='https://discord.com/users/717601845119549490'
+                    />
 
                     <Link
                       isExternal
                       showAnchorIcon
-                      href='https://github.com/puneetkakkar'
                       anchorIcon={
                         <GithubIcon
                           className='mx-1 text-gray-300 cursor-pointer'
                           size={18}
                         />
                       }
-                    ></Link>
+                      href='https://github.com/puneetkakkar'
+                    />
 
                     <Link
                       isExternal
                       showAnchorIcon
-                      href='https://www.linkedin.com/in/puneet-kakkar/'
                       anchorIcon={
                         <LinkedInIcon
                           className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
                           size={18}
                         />
                       }
-                    ></Link>
+                      href='https://www.linkedin.com/in/puneet-kakkar/'
+                    />
 
                     <Link
                       isExternal
                       showAnchorIcon
-                      href='https://www.reddit.com/user/Binary_Explorer/'
                       anchorIcon={
                         <RedditIcon
                           className='mx-1 dark:fill-white fill-gray-300 cursor-pointer'
                           size={16}
                         />
                       }
-                    ></Link>
+                      href='https://www.reddit.com/user/Binary_Explorer/'
+                    />
                   </div>
                 </div>
               </div>

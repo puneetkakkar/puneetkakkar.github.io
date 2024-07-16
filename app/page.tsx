@@ -1,4 +1,5 @@
 import { Button } from '@nextui-org/button'
+import { EmblaOptionsType } from 'embla-carousel'
 import Image from 'next/image'
 import NextLink from 'next/link'
 
@@ -14,7 +15,6 @@ import {
   TSIcon
 } from '@/components/icons'
 import '@/styles/embla.css'
-import { EmblaOptionsType } from 'embla-carousel'
 
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDES = [
@@ -155,10 +155,10 @@ export default function Home() {
               <div className='flex items-start w-full'>
                 <EmblaCarousel options={OPTIONS}>
                   {SLIDES.map((content, index) => (
-                    <div className='embla__slide' key={index}>
+                    <div key={index} className='embla__slide'>
                       <div className='embla__slide__number flex flex-col items-start justify-start mt-1'>
                         <div className='text-xs sm:text-sm font-inter font-normal'>
-                          "{content.experience}"
+                          &quot;{content.experience}&quot;
                         </div>
                         <div className='w-auto text-[9px] sm:text-xs font-inter font-normal text-[#818181] mt-2'>
                           <span>
