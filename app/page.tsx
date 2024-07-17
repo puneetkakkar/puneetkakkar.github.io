@@ -59,7 +59,7 @@ export default function Home() {
         <div className='group w-full sm:w-full mb-4 md:mb-0 relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-500 hover:cursor-pointer'>
           <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
           <div className='flex flex-col relative h-full rounded-[15px] sm:text-left w-full bg-[#F9F9F9] dark:bg-[#171D27] p-7'>
-            <div className='font-rubik text-3xl sm:text-4xl font-extrabold'>
+            <div className='font-rubik text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-black'>
               <span>
                 I build things <br />
                 for the <br />
@@ -136,7 +136,7 @@ export default function Home() {
               <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-pink-600 to-transparent group-hover:visible' />
               <div className='relative rounded-[15px] bg-[#FFFFFF] dark:bg-[#171D27] w-full flex flex-col justify-center items-center'>
                 <MapMarker className='fill-black dark:fill-white ' />
-                <span className='font-rubik text-medium font-extrabold mt-3'>
+                <span className='font-rubik text-lg sm:text-xl lg:text-xl font-extrabold mt-3'>
                   Based in
                 </span>
                 <span className='font-inter text-xs my-1'>
@@ -192,7 +192,7 @@ export default function Home() {
           </div>
           <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
             <div className='flex flex-col sm:w-full lg:w-10/12'>
-              <div className='font-rubik font-extrabold text-medium sm:text-lg mb-5'>
+              <div className='font-rubik font-extrabold text-lg sm:text-xl lg:text-2xl mb-5'>
                 Join UpVoice: Voice concerns for transparency and
                 accountability.
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
               </div>
               <Button
                 as={NextLink}
-                className='font-normal font-inter text-xs sm:text-base rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
+                className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                 color='primary'
                 href='https://devpost.com/software/upvoice'
               >
@@ -226,7 +226,7 @@ export default function Home() {
           </div>
           <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
             <div className='flex flex-col sm:w-full lg:w-10/12'>
-              <div className='font-rubik font-extrabold text-medium sm:text-lg mb-5'>
+              <div className='font-rubik font-extrabold text-lg sm:text-xl lg:text-2xl mb-5'>
                 Bitnet 1.58b: 1-bit LLM for efficient training and
                 collaboration.
               </div>
@@ -255,7 +255,7 @@ export default function Home() {
           </div>
           <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
             <div className='flex flex-col sm:w-full lg:w-10/12'>
-              <div className='font-rubik font-extrabold text-medium sm:text-lg mb-5'>
+              <div className='font-rubik font-extrabold text-lg sm:text-xl lg:text-2xl mb-5'>
                 Estimating countries suicide rates for precision interventions,
                 prioritizing mental wellbeing.
               </div>

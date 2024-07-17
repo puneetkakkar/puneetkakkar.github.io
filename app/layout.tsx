@@ -76,7 +76,7 @@ export default function RootLayout({
                   <div className='flex items-center justify-start sm:justify-center'>
                     <Button
                       as={NextLink}
-                      className='font-normal font-inter text-xs sm:text-sm rounded-md px-10 bg-gray-200 text-[#363636]'
+                      className='font-semibold font-inter text-xs sm:text-sm rounded-md px-10 bg-gray-200 text-[#363636]'
                       color='primary'
                       href='/'
                       variant='flat'
