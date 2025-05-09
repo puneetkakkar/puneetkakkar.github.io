@@ -16,7 +16,7 @@ export const siteConfig = {
     },
     {
       label: 'Resume',
-      href: 'https://drive.google.com/file/d/1NJ02yQgiBIDz3soxrsrD4S1Z--jRqVCA/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1dy1vBtJuPXW2GX4On0l_kLaV__iSA6Ad/view?usp=sharing',
       target: '_blank'
     }
   ],
