@@ -42,6 +42,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PORTFOLIO_TOKEN }}
           publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: ${{ github.event.head_commit.message }}
           cname: puneetkakkar.com
