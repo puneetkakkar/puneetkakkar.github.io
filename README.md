@@ -1,4 +1,10 @@
-# Portfolio
+<h1 align="center">Personal Portfolio</h1>
+
+<p align="center">
+  <a href="https://github.com/puneetkakkar/puneetkakkar.github.io/actions/workflows/deploy.yml">
+    <img src="https://github.com/puneetkakkar/puneetkakkar.github.io/actions/workflows/deploy.yml/badge.svg?branch=main" alt="Build & Deploy" />
+  </a>&nbsp;
+</p>
 
 ## Technologies Used
 
