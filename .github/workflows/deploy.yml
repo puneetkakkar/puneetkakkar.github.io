@@ -24,7 +24,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Build static site
         run: |
@@ -44,7 +44,7 @@ jobs:
         with:
           personal_token: ${{ secrets.GH_DEPLOYMENT_TOKEN }}
           publish_dir: ./out
-          publish_branch: gh-pages
-          force_orphan: true
+          # publish_branch: gh-pages
+          # force_orphan: true
           commit_message: ${{ github.event.head_commit.message }}
           cname: puneetkakkar.com
