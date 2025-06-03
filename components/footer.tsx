@@ -2,6 +2,7 @@ import { Button } from '@nextui-org/button'
 import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
 import NextLink from 'next/link'
+
 import { DiscordIcon, GithubIcon, LinkedInIcon, RedditIcon } from './icons'
 
 export const Footer = () => {
