@@ -263,7 +263,10 @@ export default function Home() {
           Things I&apos;ve built from the ground
         </div>
         {PROJECTS.map((project, index) => (
-          <div className='flex flex-col items-center justify-center bg-[#F9F9F9] dark:bg-[#171D27] mt-16 mb-6 pb-8 md:pb-14 w-full rounded-lg'>
+          <div
+            key={index}
+            className='flex flex-col items-center justify-center bg-[#F9F9F9] dark:bg-[#171D27] mt-16 mb-6 pb-8 md:pb-14 w-full rounded-lg'
+          >
             <div className='font-rubik uppercase text-sm font-normal pt-10 md:pt-18 pb-4 pl-5'>
               {project.title}, {project.year}
             </div>
@@ -280,8 +283,8 @@ export default function Home() {
                   className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                   color='primary'
                   href={project.link}
-                  target='_blank'
                   rel='noopener noreferrer'
+                  target='_blank'
                 >
                   Learn More
                 </Button>
@@ -289,8 +292,8 @@ export default function Home() {
               <div className='flex w-full justify-center p-2 md:p-0'>
                 <Image
                   alt={project.thumbnail.alt}
-                  src={project.thumbnail.src}
                   className='w-40 h-34 sm:w-56 sm:h-32 md:w-72 md:h-40 lg:w-80 lg:h-48 xl:w-96 xl:h-56 object-contain'
+                  src={project.thumbnail.src}
                 />
               </div>
             </div>
