@@ -262,9 +262,9 @@ export default function Home() {
         <div className='font-rubik text-lg font-extrabold'>
           Things I&apos;ve built from the ground
         </div>
-        {PROJECTS.map((project, index) => (
+        {PROJECTS.map((project) => (
           <div
-            key={index}
+            key={project.title}
             className='flex flex-col items-center justify-center bg-[#F9F9F9] dark:bg-[#171D27] mt-16 mb-6 pb-8 md:pb-14 w-full rounded-lg'
           >
             <div className='font-rubik uppercase text-sm font-normal pt-10 md:pt-18 pb-4 pl-5'>
