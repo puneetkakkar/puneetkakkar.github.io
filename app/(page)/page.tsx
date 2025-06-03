@@ -279,7 +279,9 @@ export default function Home() {
                   as={NextLink}
                   className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
                   color='primary'
-                  href='https://github.com/puneetkakkar/secure-vault'
+                  href={project.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Learn More
                 </Button>
