@@ -292,7 +292,7 @@ export default function Home() {
               <div className='flex w-full justify-center p-2 md:p-0'>
                 <Image
                   alt={project.thumbnail.alt}
-                  className='w-40 h-34 sm:w-56 sm:h-32 md:w-72 md:h-40 lg:w-80 lg:h-48 xl:w-96 xl:h-56 object-contain'
+                  className='w-40 h-36 sm:w-56 sm:h-32 md:w-72 md:h-40 lg:w-80 lg:h-48 xl:w-96 xl:h-56 object-contain'
                   src={project.thumbnail.src}
                 />
               </div>
