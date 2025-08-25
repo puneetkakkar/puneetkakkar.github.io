@@ -5,6 +5,7 @@ import NextLink from 'next/link'
 
 import BitnetThumbnail from '@/assets/bitnet-thumbnail.svg'
 import ForecastingThumbnail from '@/assets/forecasting-thumbnail.svg'
+import InterviewInsightThumbnail from '@/assets/interview-insight-ai-thumbnail.svg'
 import RADARThumbnail from '@/assets/radar-thumbnail.svg'
 import SecureVaultThumbnail from '@/assets/secure-vault-thumbnail.svg'
 import UpvoiceThumbnail from '@/assets/upvoice-thumbnail.svg'
@@ -61,6 +62,22 @@ const ABOUT_ME = `I'm a senior software engineer with a Master's in CS
   stack, especially at the intersection of backend, infra, and AI.`
 
 const PROJECTS = [
+  {
+    title: 'Interview Insight AI',
+    detailedTitle:
+      'Interview Insight AI: AI-Powered Interview Transcript Analysis Platform',
+    description: `InterviewInsight AI is a sophisticated platform that leverages cutting-edge AI 
+    technology like Claude LLM, and Multi AI Agents to analyze interview transcripts and extract 
+    meaningful insights. Whether you're a developer showcasing AI skills, a recruiter analyzing candidate interviews, or an 
+    HR professional reviewing performance discussions, this platform provides enterprise-grade 
+    transcript analysis capabilities.`,
+    thumbnail: {
+      src: InterviewInsightThumbnail,
+      alt: 'Interview Insight AI Thumbnail'
+    },
+    year: '2025',
+    link: 'https://github.com/puneetkakkar/interview-insight-ai'
+  },
   {
     title: 'Secure Vault',
     detailedTitle: 'Secure Vault: The Only Key Is You',
