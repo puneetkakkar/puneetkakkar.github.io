@@ -1,5 +1,8 @@
+'use client'
+
 import { Button } from '@nextui-org/button'
 import { EmblaOptionsType } from 'embla-carousel'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import NextLink from 'next/link'
 
@@ -9,6 +12,7 @@ import InterviewInsightThumbnail from '@/assets/interview-insight-ai-thumbnail.s
 import RADARThumbnail from '@/assets/radar-thumbnail.svg'
 import SecureVaultThumbnail from '@/assets/secure-vault-thumbnail.svg'
 import UpvoiceThumbnail from '@/assets/upvoice-thumbnail.svg'
+import { ScrollAnimation } from '@/components/animations'
 import EmblaCarousel from '@/components/embla-carousel'
 import {
   JavaIcon,
@@ -149,9 +153,18 @@ const PROJECTS = [
 
 export default function Home() {
   return (
-    <section className='sm:flex sm:flex-col '>
+    <section className='sm:flex sm:flex-col'>
       <div className='flex flex-col lg:flex-row sm:gap-4 sm:py-8 md:py-10'>
-        <div className='group w-full sm:w-full mb-4 md:mb-0 relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'>
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          className='group w-full sm:w-full mb-4 md:mb-0 relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'
+          initial={{ opacity: 0, y: 0 }}
+          transition={{
+            duration: 0.6,
+            ease: [0.25, 0.46, 0.45, 0.94],
+            delay: 0.1
+          }}
+        >
           <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-blue-800 to-transparent group-hover:visible' />
           <div className='flex flex-col relative h-full rounded-[15px] sm:text-left w-full bg-[#F9F9F9] dark:bg-[#171D27] p-7'>
             <div className='font-rubik text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-black'>
@@ -170,20 +183,35 @@ export default function Home() {
                 {ABOUT_ME}
               </span>
             </div>
-            <Button
-              as={NextLink}
-              className='font-normal font-inter text-xs sm:text-sm md:text-sm rounded-md mt-5 w-1/2 sm::w-1/3 md:w-4/12 lg:w-5/12 xl:w-4/12 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
-              color='primary'
-              href='#projects'
+            <motion.div
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              Discover projects
-            </Button>
+              <Button
+                as={NextLink}
+                className='font-normal font-inter text-xs sm:text-sm md:text-sm rounded-md mt-5 w-1/2 sm::w-1/3 md:w-4/12 lg:w-5/12 xl:w-4/12 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-lg transition-all duration-300'
+                color='primary'
+                href='#projects'
+              >
+                Discover projects
+              </Button>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
 
         <div className='flex flex-col w-full sm:w-full gap-4'>
           <div className='flex sm:flex-row w-full h-full gap-4'>
-            <div className='group w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'>
+            <motion.div
+              animate={{ opacity: 1, x: 0 }}
+              className='group w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'
+              initial={{ opacity: 0, x: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.2,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
+            >
               <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-blue-800 to-transparent group-hover:visible' />
               <div className='relative h-full rounded-[15px] bg-[#FFFFFF]  dark:bg-[#171D27] w-full p-4'>
                 <span className='text-lg font-bold font-rubik'>
@@ -225,9 +253,18 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='group flex w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'>
+            <motion.div
+              animate={{ opacity: 1, x: 0 }}
+              className='group flex w-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'
+              initial={{ opacity: 0, x: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.3,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
+            >
               <div className='animate-spin-slow invisible absolute -top-40 -bottom-40 left-5 right-5 bg-gradient-to-r from-transparent via-blue-800 to-transparent group-hover:visible' />
               <div className='relative rounded-[15px] bg-[#FFFFFF] dark:bg-[#171D27] w-full flex flex-col justify-center items-center'>
                 <MapMarker className='fill-black dark:fill-white ' />
@@ -236,10 +273,19 @@ export default function Home() {
                 </span>
                 <span className='font-inter text-sm my-1 '>San Mateo, CA</span>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className='group flex w-full h-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'>
+          <motion.div
+            animate={{ opacity: 1, y: 0 }}
+            className='group flex w-full h-full relative mx-auto overflow-hidden rounded-[16px] p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-sky-400 hover:to-sky-400 hover:cursor-pointer'
+            initial={{ opacity: 0, y: 0 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.4,
+              ease: [0.25, 0.46, 0.45, 0.94]
+            }}
+          >
             <div className='animate-spin-slow invisible absolute -top-52 -bottom-52 left-5 right-5 bg-gradient-to-r from-transparent via-blue-600 to-transparent group-hover:visible' />
             <div className='relative rounded-[15px] flex flex-col bg-[#FFFFFF] dark:bg-[#171D27] w-full p-4'>
               <div className='font-rubik font-extrabold text-lg'>
@@ -266,56 +312,92 @@ export default function Home() {
                 </EmblaCarousel>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div
-        className='flex flex-col items-center justify-center py-48'
-        id='projects'
-      >
-        <div className='font-rubik text-xs text-[#818181] mb-4'>
-          Curated Work
-        </div>
-        <div className='font-rubik text-lg font-extrabold'>
-          Things I&apos;ve built from the ground
-        </div>
-        {PROJECTS.map((project) => (
-          <div
-            key={project.title}
-            className='flex flex-col items-center justify-center bg-[#F9F9F9] dark:bg-[#171D27] mt-16 mb-6 pb-8 md:pb-14 w-full rounded-lg'
+
+      <div id='projects'>
+        <ScrollAnimation className='flex flex-col items-center justify-center py-48'>
+          <motion.div
+            className='font-rubik text-xs text-[#818181] mb-4'
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
           >
-            <div className='font-rubik uppercase text-sm font-normal pt-10 md:pt-18 pb-4 pl-5'>
-              {project.title}, {project.year}
-            </div>
-            <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
-              <div className='flex flex-col sm:w-full lg:w-10/12'>
-                <div className='font-rubik font-extrabold text-lg sm:text-xl lg:text-2xl mb-5'>
-                  {project.detailedTitle || project.title}
-                </div>
-                <div className='font-inter text-xs sm:text-sm text-[#818181]'>
-                  {project.description}
-                </div>
-                <Button
-                  as={NextLink}
-                  className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)]'
-                  color='primary'
-                  href={project.link}
-                  rel='noopener noreferrer'
-                  target='_blank'
+            Curated Work
+          </motion.div>
+          <motion.div
+            className='font-rubik text-lg font-extrabold'
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
+            Things I&apos;ve built from the ground
+          </motion.div>
+          {PROJECTS.map((project) => (
+            <ScrollAnimation
+              key={project.title}
+              className='flex flex-col items-center justify-center bg-[#F9F9F9] dark:bg-[#171D27] mt-16 mb-6 pb-8 md:pb-14 w-full rounded-lg'
+            >
+              <motion.div
+                className='font-rubik uppercase text-sm font-normal pt-10 md:pt-18 pb-4 pl-5'
+                initial={{ opacity: 0, x: -30 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1, x: 0 }}
+              >
+                {project.title}, {project.year}
+              </motion.div>
+              <div className='flex flex-col-reverse gap-4 sm:flex-row items-center justify-center p-5 sm:p-10 w-full'>
+                <motion.div
+                  className='flex flex-col sm:w-full lg:w-10/12'
+                  initial={{ opacity: 0, y: 30 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, y: 0 }}
                 >
-                  Learn More
-                </Button>
+                  <div className='font-rubik font-extrabold text-lg sm:text-xl lg:text-2xl mb-5'>
+                    {project.detailedTitle || project.title}
+                  </div>
+                  <div className='font-inter text-xs sm:text-sm text-[#818181]'>
+                    {project.description}
+                  </div>
+                  <motion.div
+                    transition={{ duration: 0.2 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Button
+                      as={NextLink}
+                      className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-lg transition-all duration-300'
+                      color='primary'
+                      href={project.link}
+                      rel='noopener noreferrer'
+                      target='_blank'
+                    >
+                      Learn More
+                    </Button>
+                  </motion.div>
+                </motion.div>
+                <motion.div
+                  className='flex w-full justify-center p-2 md:p-0'
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                >
+                  <Image
+                    alt={project.thumbnail.alt}
+                    className='w-40 h-36 sm:w-56 sm:h-32 md:w-72 md:h-40 lg:w-80 lg:h-48 xl:w-96 xl:h-56 object-contain'
+                    src={project.thumbnail.src}
+                  />
+                </motion.div>
               </div>
-              <div className='flex w-full justify-center p-2 md:p-0'>
-                <Image
-                  alt={project.thumbnail.alt}
-                  className='w-40 h-36 sm:w-56 sm:h-32 md:w-72 md:h-40 lg:w-80 lg:h-48 xl:w-96 xl:h-56 object-contain'
-                  src={project.thumbnail.src}
-                />
-              </div>
-            </div>
-          </div>
-        ))}
+            </ScrollAnimation>
+          ))}
+        </ScrollAnimation>
       </div>
     </section>
   )
