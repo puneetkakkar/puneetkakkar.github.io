@@ -11,8 +11,8 @@ import {
 } from '@nextui-org/navbar'
 import { link as linkStyles } from '@nextui-org/theme'
 import clsx from 'clsx'
-import NextLink from 'next/link'
 import { motion } from 'framer-motion'
+import NextLink from 'next/link'
 
 import { ThemeSwitch } from '@/components/theme-switch'
 import { siteConfig } from '@/config/site'
@@ -110,6 +110,7 @@ export const Navbar = () => {
           </motion.div>
           <motion.div
             animate={{ opacity: 1, scale: 1 }}
+            className='h-full'
             initial={{ opacity: 0, scale: 0.8 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >

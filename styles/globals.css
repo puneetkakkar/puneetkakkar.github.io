@@ -60,6 +60,11 @@
     transform: translateY(0);
   }
   
+  /* Centered scaling for buttons */
+  .scale-center {
+    transform-origin: center;
+  }
+  
   /* Smooth card animations */
   .card-smooth {
     transition: all 0.3s ease;
