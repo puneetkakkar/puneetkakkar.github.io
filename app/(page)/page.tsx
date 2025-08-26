@@ -184,13 +184,14 @@ export default function Home() {
               </span>
             </div>
             <motion.div
+              className='flex max-w-fit'
               transition={{ duration: 0.2 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <Button
                 as={NextLink}
-                className='font-normal font-inter text-xs sm:text-sm md:text-sm rounded-md mt-5 w-1/2 sm::w-1/3 md:w-4/12 lg:w-5/12 xl:w-4/12 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-lg transition-all duration-300'
+                className='font-normal font-inter text-xs sm:text-sm md:text-sm rounded-md mt-5 w-full bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-md transition-all duration-300'
                 color='primary'
                 href='#projects'
               >
@@ -365,13 +366,14 @@ export default function Home() {
                     {project.description}
                   </div>
                   <motion.div
+                    className='flex max-w-fit'
                     transition={{ duration: 0.2 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button
                       as={NextLink}
-                      className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-lg transition-all duration-300'
+                      className='font-normal font-inter text-xs sm:text-sm rounded-md mt-5 w-36 bg-[linear-gradient(105.36deg,_#043872_0%,_#0052F4_76.61%,_#0054F5_150.11%)] hover:shadow-md transition-all duration-300'
                       color='primary'
                       href={project.link}
                       rel='noopener noreferrer'

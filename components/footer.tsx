@@ -3,7 +3,6 @@
 import { Button } from '@nextui-org/button'
 import { Divider } from '@nextui-org/divider'
 import { Link } from '@nextui-org/link'
-import NextLink from 'next/link'
 import { motion } from 'framer-motion'
 
 import { DiscordIcon, GithubIcon, LinkedInIcon, RedditIcon } from './icons'
@@ -53,10 +52,12 @@ export const Footer = () => {
             whileHover={{ scale: 1.05 }}
           >
             <Button
-              as={NextLink}
+              as='a'
               className='font-semibold font-inter text-xs sm:text-sm rounded-md px-10 bg-gray-200 text-[#363636]'
               color='primary'
               href='mailto:pkakkar996@gmail.com'
+              rel='noopener noreferrer'
+              target='_blank'
               variant='flat'
             >
               Reach out
