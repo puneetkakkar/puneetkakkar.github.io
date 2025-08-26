@@ -6,6 +6,7 @@ import { SwitchProps, useSwitch } from '@nextui-org/switch'
 import { useTheme } from 'next-themes'
 import { useIsSSR } from '@react-aria/ssr'
 import clsx from 'clsx'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import { SunFilledIcon, MoonFilledIcon } from '@/components/icons'
 
@@ -70,11 +71,35 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           )
         })}
       >
-        {!isSelected || isSSR ? (
-          <SunFilledIcon size={22} />
-        ) : (
-          <MoonFilledIcon size={22} />
-        )}
+        <motion.div
+          transition={{ duration: 0.2 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <AnimatePresence mode='wait'>
+            {!isSelected || isSSR ? (
+              <motion.div
+                key='sun'
+                animate={{ opacity: 1, rotate: 0 }}
+                exit={{ opacity: 0, rotate: 90 }}
+                initial={{ opacity: 0, rotate: -90 }}
+                transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+              >
+                <SunFilledIcon size={22} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key='moon'
+                animate={{ opacity: 1, rotate: 0 }}
+                exit={{ opacity: 0, rotate: -90 }}
+                initial={{ opacity: 0, rotate: 90 }}
+                transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+              >
+                <MoonFilledIcon size={22} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
       </div>
     </Component>
   )
